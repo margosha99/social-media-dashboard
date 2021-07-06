@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body">
+  <section class="dashboard">
+    <div class="dashboard__text">
+        <h2 id="main-text">Social Media Dashboard</h2>
+        <p>Total Followers: 23,004</p>
+    </div>
+    <div class="dashboard__switch-group">
+      <span class="dashboard__mode">Dark Mode</span>
+      <input type="checkbox" class="dashboard__switcher" name="switch-mode" id="switch-mode">
+    </div>
+  </section>
+  
+  <section class="main-cards">
+    <ul class="main-cards__list">
+      <li class="main-cards__card facebook">
+        <div class="card__social">
+          <span class="icon-facebook"></span>
+          <span class="card__card-username"> @nathanf</span>
+        </div>
+        <div class="card__followers">
+          <p class="card__number">1987</p>
+          <span class="card__follow-text">Followers</span>
+        </div>
+        <span class="card__statistic green"> 12 Today</span>
+      </li>
+      <li class="main-cards__card twitter">
+        <div class="card__social">
+          <span class="icon-twitter"></span>
+          <span class="card__card-username"> @nathanf</span>
+        </div>
+        <div class="card__followers">
+          <p class="card__number">1044</p>
+          <span class="card__follow-text">Followers</span>
+        </div>
+        <div class="card__statistic">
+          <span class="card__statistic green"> 99 Today</span>
+        </div>
+      </li>
+      <li class="main-cards__card instagram">
+        <div class="card__social">
+          <span class="icon-instagram"></span>
+          <span class="card__card-username"> @realnathanf</span>
+        </div>
+        <div class="card__followers">
+          <p class="card__number">  11k</p>
+          <span class="card__follow-text">Followers</span>
+        </div>
+          <span class="card__statistic green"> 1099 Today</span>
+      </li>
+      <li class="main-cards__card youtube">
+        <div class="card__social">
+          <span class="icon-youtube"></span>
+          <span class="card__card-username">  Nathan F.</span>
+        </div>
+        <div class="card__followers">
+          <p class="card__number">8239</p>
+          <span class="card__follow-text"> Subscribers</span>
+        </div>
+        <span class="card__statistic red">144 Today</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="overview">
+    <h2>Overview - Today</h2>
+    <ul class="overview-cards">
+      <li class="overview-cards__card">
+        <div class="card__views">
+          <span class="card__views-text">Page Views</span>
+          <span class="icon-facebook"></span>
+        </div>
+        <div class="card__info">
+          <span class="card__info-number">87</span>
+          <span class="card__statistic green">3%</span>
+        </div>
+      </li>
+      <li class="overview-cards__card">
+        <div class="card__views">
+          <span  class="card__views-text">Likes</span>
+          <span class="icon-facebook"></span>
+        </div>
+        <div class="card__info">
+          <span class="card__info-number">52</span>
+          <span class="card__statistic red">2%</span>
+        </div>
+      </li>
+      <li class="overview-cards__card">
+        <div class="card__views">
+          <span  class="card__views-text">Likes</span>
+          <span class="icon-instagram"></span>
+        </div>
+        <div class="card__info">
+          <span class="card__info-number">5462</span>
+          <span class="card__statistic green">2257%</span>
+        </div>
+      </li>
+      <li class="overview-cards__card">
+        <div class="card__views">
+          <span class="card__views-text">Profile Views</span>
+          <span class="icon-instagram"></span>
+        </div>
+        <div class="card__info">
+          <span class="card__info-number">52k</span>
+          <span class="card__statistic green">1375%</span>
+        </div>
+      </li>
+      <li class="overview-cards__card">
+        <div class="card__views">
+          <span class="card__views-text">Retweets</span>
+          <span class="icon-twitter"></span>
+        </div>
+        <div class="card__info">
+          <span class="card__info-number">117</span>
+          <span class="card__statistic green">303%</span>
+        </div>
+      </li>
+      <li class="overview-cards__card">
+        <div class="card__views">
+          <span  class="card__views-text">Likes</span>
+          <span class="icon-twitter"></span>
+        </div>
+        <div class="card__info">
+          <span class="card__info-number">507</span>
+          <span class="card__statistic green">553%</span>
+        </div>
+      </li>
+      <li class="overview-cards__card">
+        <div class="card__views">
+          <span  class="card__views-text">Likes</span>
+          <span class="icon-youtube"></span>
+        </div>
+        <div class="card__info">
+          <span class="card__info-number">107</span>
+          <span class="card__statistic red">19%</span>
+        </div>
+      </li>
+      <li class="overview-cards__card">
+        <div class="card__views">
+          <span  class="card__views-text">Total Views</span>
+          <span class="icon-youtube"></span>
+        </div>
+        <div class="card__info">
+          <span class="card__info-number">1407</span>
+          <span class="card__statistic red">12%</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
